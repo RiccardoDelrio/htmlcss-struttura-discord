@@ -64,6 +64,11 @@
     .dc-footer-color {
         background-color: #23272a;
     }
+
+    .dc-footer-small-column {
+
+        background-color: #20b2aa;
+    }
 }
 
 
@@ -181,10 +186,13 @@ nav {
 
 footer {
     display: flex;
-    height: 740px;
+    height: 760px;
 }
 
 .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
     width: 60%;
     margin: auto;
 }
@@ -193,14 +201,39 @@ footer {
     display: flex;
     width: 100%;
     height: 580px;
-    gap: 1rem;
+
     justify-content: space-between;
+    gap: 2px;
+
 }
 
 .footer-column {
     width: 100%;
     height: 100%;
     background-color: red;
+    flex: 1;
 
+
+}
+
+.contact {
+    flex: 2;
+
+}
+
+.below-section {
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo-footer,
+.bt-footer {
+    height: 35px;
+    width: 70px;
+    text-align: center;
+    align-content: center;
 
 }
