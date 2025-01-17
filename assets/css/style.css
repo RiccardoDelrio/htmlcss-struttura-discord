@@ -56,6 +56,14 @@
     .dc-green {
         background-color: green;
     }
+
+    .dc-grey {
+        background-color: grey;
+    }
+
+    .dc-footer-color {
+        background-color: #23272a;
+    }
 }
 
 
@@ -105,6 +113,10 @@ nav {
         justify-content: center;
         gap: 1rem;
     }
+}
+
+.footer-container {
+    border: 2px solid white;
 }
 
 /*  Header finish */
@@ -161,6 +173,34 @@ nav {
 .tech-container {
     height: 900px;
     width: 60%;
-
     margin: auto;
+}
+
+/* main finish */
+/* start footer */
+
+footer {
+    display: flex;
+    height: 740px;
+}
+
+.footer-container {
+    width: 60%;
+    margin: auto;
+}
+
+.upper-section {
+    display: flex;
+    width: 100%;
+    height: 580px;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+
+
 }
