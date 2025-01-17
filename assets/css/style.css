@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* debug class */
+.debug {
+    header {
+        background-color: aquamarine;
+
+    }
+
+    nav {
+        background-color: orange;
+    }
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* Start hader */
+header {
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    height: 50px;
+}
