@@ -77,6 +77,7 @@
 
 :root {
     --ct-dark-blue: #23272a;
+    --ct-bg-grey: #f6f6f6;
 }
 
 
@@ -91,8 +92,24 @@ body {
     align-items: center;
 }
 
+.df-jc-end {
+    justify-content: flex-end;
+}
 
-/* Start hader */
+.df-jc-start {
+    justify-content: flex-start;
+}
+
+.df-jc-center {
+    justify-content: center;
+}
+
+.bg-grey {
+    background-color: var(--ct-bg-grey);
+}
+
+
+/* Start header */
 header {
     height: 80px;
     width: 100%;
@@ -158,8 +175,8 @@ nav {
 }
 
 .topics-section {
-    height: 600px;
     display: flex;
+    padding: 50px;
 }
 
 .topics-container {
@@ -170,17 +187,13 @@ nav {
     display: flex;
 }
 
-.img-topics {
-    height: 350px;
 
-}
 
 .img-container {
     height: 100%;
     flex: 2;
     display: flex;
     align-items: center;
-    justify-content: center;
 
 
 }
@@ -201,14 +214,6 @@ h2 {
 p {
     font-size: 1rem;
 }
-
-
-
-
-
-
-
-
 
 .jumbotron-content {
     height: 100%;
@@ -254,7 +259,8 @@ p {
 
 .bt-instal-mac {
     background-color: white;
-
+    color: black;
+    margin-right: 30px;
 
 }
 
@@ -262,6 +268,20 @@ p {
     background-color: var(--ct-dark-blue);
     color: white;
 }
+
+/* .main-content {
+    .topics-section:nth-child(odd) {
+        .img-container {
+            justify-content: flex-start;
+        }
+    }
+
+    .topics-section:nth-child(even) {
+        .img-container {
+            justify-content: flex-end;
+        }
+    }
+} */
 
 .tech-container {
     .topics-container {
@@ -346,4 +366,19 @@ footer {
     text-align: center;
     align-content: center;
 
+}
+
+/* pagestyle */
+.waves {
+    img {
+        width: 100%;
+        display: block;
+
+    }
+
+    &.reverse {
+        img {
+            transform: rotate(180deg);
+        }
+    }
 }
