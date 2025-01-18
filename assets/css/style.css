@@ -135,7 +135,7 @@ nav {
 
 .jumbotron-container {
     height: 400px;
-    width: 60%;
+    max-width: 1130px;
     margin: auto;
     display: flex;
 
@@ -148,7 +148,7 @@ nav {
 
 .topics-container {
     height: 500px;
-    width: 60%;
+    max-width: 1130px;
     margin: auto;
     display: flex;
 
@@ -177,7 +177,7 @@ nav {
 
 .tech-container {
     height: 900px;
-    width: 60%;
+    max-width: 1130px;
     margin: auto;
 }
 
@@ -193,7 +193,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
-    width: 60%;
+    max-width: 1130px;
     margin: auto;
 }
 
