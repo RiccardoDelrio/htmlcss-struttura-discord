@@ -78,6 +78,7 @@
 :root {
     --ct-dark-blue: #23272a;
     --ct-bg-grey: #f6f6f6;
+    --ct-lite-blue: #7289da;
 }
 
 
@@ -241,10 +242,14 @@ p {
 }
 
 .tech-container {
-    height: 900px;
+
     width: 100%;
     max-width: 1130px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .bt-style {
@@ -283,32 +288,28 @@ p {
     }
 } */
 
-.tech-container {
-    .topics-container {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .img-container {
-        width: 100%;
-        height: 100%;
-    }
 
-    .img-topics {
-        height: 100%;
-        width: 100%;
-    }
-
-    .description {
-        max-width: 1130px;
-        text-align: center;
-    }
-
-    p {
-        max-width: 720px;
-        text-align: center;
-    }
+.img-container {
+    width: 100%;
+    height: 100%;
 }
+
+.img-topics {
+    height: 100%;
+    width: 100%;
+}
+
+.description {
+    max-width: 1130px;
+    text-align: center;
+}
+
+p {
+    max-width: 720px;
+    text-align: center;
+}
+
 
 /* main finish */
 /* start footer */
@@ -367,6 +368,51 @@ footer {
     align-content: center;
 
 }
+
+.tech-description {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.go-back {
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        width: auto;
+        text-align: center;
+        color: white;
+        background-color: var(--ct-lite-blue);
+    }
+
+}
+
+.go-back-bg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        font-size: 2rem;
+    }
+
+
+}
+
+*/ */
 
 /* pagestyle */
 .waves {
