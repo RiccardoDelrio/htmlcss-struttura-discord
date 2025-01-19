@@ -61,9 +61,7 @@
         background-color: grey;
     }
 
-    .dc-footer-color {
-        background-color: #23272a;
-    }
+
 
     .dc-footer-small-column {
 
@@ -313,10 +311,14 @@ p {
 
 /* main finish */
 /* start footer */
+.dc-footer-color {
+    background-color: #23272a;
+    color: white;
+}
 
 footer {
     display: flex;
-    height: 760px;
+
 }
 
 .footer-container {
@@ -326,24 +328,60 @@ footer {
     width: 100%;
     max-width: 1130px;
     margin: auto;
+
+    hr {
+        border: 1px solid var(--ct-lite-blue);
+    }
+
 }
 
 .upper-section {
     display: flex;
     width: 100%;
-    height: 580px;
+
 
     justify-content: space-between;
     gap: 2px;
 
+    ul {
+        list-style-type: none;
+
+        li:first-child {
+            color: var(--ct-lite-blue);
+        }
+
+    }
 }
 
 .footer-column {
-    width: 100%;
-    height: 100%;
-    background-color: red;
     flex: 1;
+    padding: 20px;
 
+    ul {
+        li:first-child {
+            font-size: 2rem;
+            margin: 20 0px;
+
+        }
+
+        li {
+
+            margin-bottom: 25px;
+        }
+    }
+
+
+}
+
+.footer-small-column {
+    margin-top: 10px;
+
+    ul {
+        li:first-child {
+            font-size: 1rem;
+
+        }
+    }
 
 }
 
@@ -355,7 +393,6 @@ footer {
 .below-section {
     height: 108px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
 }
@@ -363,7 +400,7 @@ footer {
 .logo-footer,
 .bt-footer {
     height: 35px;
-    width: 70px;
+
     text-align: center;
     align-content: center;
 
@@ -386,13 +423,15 @@ footer {
     align-items: center;
     justify-content: center;
 
-    a {
-        width: auto;
-        text-align: center;
-        color: white;
-        background-color: var(--ct-lite-blue);
-    }
 
+
+}
+
+.bt-lite-blue {
+    width: auto;
+    text-align: center;
+    color: white;
+    background-color: var(--ct-lite-blue);
 }
 
 .go-back-bg {
@@ -412,7 +451,36 @@ footer {
 
 }
 
-*/ */
+.flag {
+
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 30px;
+        height: 20px;
+    }
+
+    ul {
+        li:first-child {
+            color: white;
+            font-size: 1rem;
+        }
+
+        li {
+            margin: 0;
+            margin: 0 0 0 16px;
+            padding: 0;
+
+        }
+
+
+    }
+}
+
+
+
+
 
 /* pagestyle */
 .waves {
@@ -425,6 +493,7 @@ footer {
     &.reverse {
         img {
             transform: rotate(180deg);
+
         }
     }
 }
